@@ -1,0 +1,5 @@
+{
+    deadly = true;
+    targeting = true;
+}
+

@@ -1,0 +1,106 @@
+Converting GML script: ${project_dir}\scripts\CheckClimbDownButton\CheckClimbDownButton.gml
+Converted string - line 16: 'S' -> "S"
+
+Converting GML script: ${project_dir}\scripts\CheckWeaponButtonPressed\CheckWeaponButtonPressed.gml
+Converted string - line 16: 'E' -> "E"
+
+Converting GML script: ${project_dir}\scripts\CheckWeaponButtonReleased\CheckWeaponButtonReleased.gml
+Converted string - line 16: 'E' -> "E"
+
+Converting GML script: ${project_dir}\scripts\CheckRunLeftButton\CheckRunLeftButton.gml
+Converted string - line 18: 'A' -> "A"
+
+Converting GML script: ${project_dir}\scripts\CheckRunRightButton\CheckRunRightButton.gml
+Converted string - line 18: 'D' -> "D"
+
+Converting GML script: ${project_dir}\scripts\CheckRollButtonPressed\CheckRollButtonPressed.gml
+Converted string - line 16: 'S' -> "S"
+
+Converting GML script: ${project_dir}\scripts\CheckRollButton\CheckRollButton.gml
+Converted string - line 16: 'S' -> "S"
+
+Converting GML script: ${project_dir}\scripts\CheckDuckButton\CheckDuckButton.gml
+Converted string - line 17: 'S' -> "S"
+
+Converting GML script: ${project_dir}\scripts\CheckJumpButtonPressed\CheckJumpButtonPressed.gml
+Converted string - line 16: 'W' -> "W"
+
+Converting GML script: ${project_dir}\scripts\CheckJumpButton\CheckJumpButton.gml
+Converted string - line 16: 'W' -> "W"
+
+Converting GML script: ${project_dir}\scripts\CheckClimbUpButton\CheckClimbUpButton.gml
+Converted string - line 16: 'W' -> "W"
+
+Converting GML script: ${project_dir}\scripts\lines_intersect\lines_intersect.gml
+Converted description /// @description  lines_intersect(x1,y1,x2,y2,x3,y3,x4,y4,segment)/// @param x1
+/// @param y1
+/// @param x2
+/// @param y2
+/// @param x3
+/// @param y3
+/// @param x4
+/// @param y4
+/// @param segment
+
+Font fontTitle has been converted to font family Arial (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fontTitle\fontTitle.gms1.png
+Font fontSetup has been converted to font family Impact (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fontSetup\fontSetup.gms1.png
+Font fontSetupNumber has been converted to font family Arial (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fontSetupNumber\fontSetupNumber.gms1.png
+Converting GML script: ${project_dir}\objects\objController\Alarm_0.gml
+Converted builtin - line 3: background_visible[1] -> __background_get( e__BG.Visible, 1 )
+Converted builtin - line 4: background_visible[1] = false -> __background_set( e__BG.Visible, 1, false )
+Converted builtin - line 6: background_visible[1] = true -> __background_set( e__BG.Visible, 1, true )
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'soundLaserCharge' - setting to default audio group
+Missing audiogroup for sound: 'soundLaserShoot' - setting to default audio group
+Missing audiogroup for sound: 'soundExplosion1' - setting to default audio group
+Missing audiogroup for sound: 'soundRobotLand' - setting to default audio group
+Missing audiogroup for sound: 'soundPickupItem' - setting to default audio group
+Missing audiogroup for sound: 'soundMinePlant' - setting to default audio group
+Missing audiogroup for sound: 'soundRocketLaunch' - setting to default audio group
+Missing audiogroup for sound: 'soundAcidRainDrop1' - setting to default audio group
+Missing audiogroup for sound: 'soundAcidRainDrop2' - setting to default audio group
+Missing audiogroup for sound: 'soundAcidRain' - setting to default audio group
+Missing audiogroup for sound: 'soundElectricBall1' - setting to default audio group
+Missing audiogroup for sound: 'soundElectricBall2' - setting to default audio group
+Missing audiogroup for sound: 'soundZapped' - setting to default audio group
+Missing audiogroup for sound: 'soundCorroded' - setting to default audio group
+Missing audiogroup for sound: 'soundGrowIce' - setting to default audio group
+Missing audiogroup for sound: 'soundTitleImpact' - setting to default audio group
+Missing audiogroup for sound: 'musicTitleScreen' - setting to default audio group
+Missing audiogroup for sound: 'soundArenaLightsOn' - setting to default audio group
+Missing audiogroup for sound: 'musicArena' - setting to default audio group
+Missing audiogroup for sound: 'sound34' - setting to default audio group
+Missing audiogroup for sound: 'soundIcicleCrash' - setting to default audio group
+Missing audiogroup for sound: 'soundLaserBeam' - setting to default audio group
+Missing audiogroup for sound: 'soundDeathRayBallOpenEye' - setting to default audio group
+Missing audiogroup for sound: 'soundDeathRayBallScan' - setting to default audio group
+Missing audiogroup for sound: 'soundDeathRayBall' - setting to default audio group
+Missing audiogroup for sound: 'soundFloorBreak1' - setting to default audio group
+Missing audiogroup for sound: 'soundFloorBreak2' - setting to default audio group
+Missing audiogroup for sound: 'soundMetalCollision' - setting to default audio group
+Missing audiogroup for sound: 'soundMechanical1' - setting to default audio group
+Missing audiogroup for sound: 'soundDrone2' - setting to default audio group
+Missing audiogroup for sound: 'soundSplat' - setting to default audio group
+Missing audiogroup for sound: 'soundMortarLaunch' - setting to default audio group
+Missing audiogroup for sound: 'soundHeavyImpact' - setting to default audio group
+Missing audiogroup for sound: 'soundFootstep' - setting to default audio group
+Missing audiogroup for sound: 'musicArena2' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'background/__background_get.gml'
+Added compatibility script 'background/__background_get_element.gml'
+Added compatibility script 'background/__background_get_internal.gml'
+Added compatibility script 'background/__background_set.gml'
+Added compatibility script 'background/__background_set_element.gml'
+Added compatibility script 'background/__background_set_internal.gml'
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'texture/texture_set_interpolation.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

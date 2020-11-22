@@ -1,0 +1,5 @@
+{
+    electrified = false;
+    electrifiedOther = false;
+}
+

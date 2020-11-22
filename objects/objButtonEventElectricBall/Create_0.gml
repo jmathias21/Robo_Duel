@@ -1,0 +1,4 @@
+{
+    ButtonDifficultyCreate(3);
+}
+

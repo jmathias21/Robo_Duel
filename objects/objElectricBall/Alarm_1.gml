@@ -1,0 +1,5 @@
+{
+    zapUp = false;
+    zapDown = false;
+}
+

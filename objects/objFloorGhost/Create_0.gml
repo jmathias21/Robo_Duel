@@ -1,0 +1,4 @@
+{
+    spotted = false;
+}
+
