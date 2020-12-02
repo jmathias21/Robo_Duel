@@ -7,12 +7,12 @@
         shader_set_uniform_color(hnd_colorOut, colorOut, 1.0);
         shader_set_uniform_f(hnd_colorTolerance, .13, 1, 1, 1);
         shader_set_uniform_f(hnd_blend, 1);
-        draw_sprite_ext(sprite_index, -1, x, y, dir, 1, 0, image_blend, 1);
+        draw_sprite_ext(sprite_index, -1, x, y, faceDir, 1, 0, image_blend, 1);
         shader_reset();
     }
     else
     {
-        draw_sprite_ext(sprite_index, -1, x, y, dir, 1, 0, image_blend, 1);
+        draw_sprite_ext(sprite_index, -1, x, y, faceDir, 1, 0, image_blend, 1);
     }
     
     /*draw_set_color(c_black);

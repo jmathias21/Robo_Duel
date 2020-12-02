@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "ButtonChecks",
-    "path": "folders/Scripts/ButtonChecks.yy",
+    "name": "Robot",
+    "path": "folders/Scripts/Robot.yy",
   },
   "resourceVersion": "1.0",
-  "name": "CheckDuckButton",
+  "name": "RobotDestroy",
   "tags": [],
   "resourceType": "GMScript",
 }

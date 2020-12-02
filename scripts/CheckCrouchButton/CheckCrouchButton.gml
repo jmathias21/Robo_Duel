@@ -1,4 +1,4 @@
-function CheckDuckButton(argument0) {
+function CheckCrouchButton(argument0) {
 	{
 	    var playerControl = argument0;
 	    if (playerControl == 0)
