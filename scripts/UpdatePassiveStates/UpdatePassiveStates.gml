@@ -6,5 +6,5 @@ function UpdatePassiveStates(){
 	inAir = !onRubber && !onFloor;
 	falling = vspeed > 0;
 	landingOnFloor = falling & onFloor;
-	landingOnRubber = falling & onFloor;
+	landingOnRubber = falling & onRubber;
 }
