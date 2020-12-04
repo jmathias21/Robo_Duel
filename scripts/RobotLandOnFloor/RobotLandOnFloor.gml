@@ -8,4 +8,8 @@ function RobotLandOnFloor() {
 	if (collisionFloor.electrified) {
 		RobotDestroy(2);
 	}
+	
+	if (pressRun) {
+		state = activeState.running;
+	}
 }

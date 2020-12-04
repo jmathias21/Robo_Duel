@@ -1,4 +1,4 @@
 function RobotJump() {
 	vspeed = -3;
-	state = activeState.standing;
+	state = activeState.running;
 }

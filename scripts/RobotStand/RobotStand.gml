@@ -5,6 +5,7 @@ function RobotStand() {
 	
 	if (pressRun) {
         state = activeState.running;
+		return;
 	}
 	
 	if (pressCrouch) {

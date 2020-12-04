@@ -38,9 +38,6 @@
 	}
 	
 	if (inAir) {
-		currentRunRightSpeed = 0;
-		currentRunLeftSpeed = 0;
-		
 		if (state != activeState.climbing) {
 			vspeed += rgravity;
 		}
@@ -51,5 +48,5 @@
 		hspeed -= currentRunLeftSpeed;
 	}
 	
-	RobotApplyFriction(.5);
+	RobotApplyFriction(.2);
 }

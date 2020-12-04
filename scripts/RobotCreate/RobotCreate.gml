@@ -8,7 +8,7 @@ function RobotCreate(argument0, argument1) {
     
 	// Set physics properties
 	rgravity = .14;
-	maxRunSpeed = 1.1;
+	maxRunSpeed = 4.5;
 	currentRunLeftSpeed = 0;
 	currentRunRightSpeed = 0;
 	vspeed = 0;

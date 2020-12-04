@@ -14,7 +14,7 @@ function RobotRun() {
 	
 	if (pressRunLeft && onFloor) {
 		currentRunRightSpeed *= .8;
-		currentRunLeftSpeed += .1;
+		currentRunLeftSpeed += 1;
 		
 		if (currentRunLeftSpeed > maxRunSpeed) {
 			currentRunLeftSpeed = maxRunSpeed;
@@ -24,7 +24,7 @@ function RobotRun() {
 	
 	if (pressRunRight && onFloor) {
 		currentRunLeftSpeed *= .8;
-		currentRunRightSpeed += .1;
+		currentRunRightSpeed += 1;
 		
 		if (currentRunRightSpeed > maxRunSpeed) {
 			currentRunRightSpeed = maxRunSpeed;
@@ -33,5 +33,7 @@ function RobotRun() {
 	}
 	
 	// if no actions are chained, change robot back to standing state
-	state = activeState.standing;
+	if (!pressRun) {
+		state = activeState.standing;
+	}
 }

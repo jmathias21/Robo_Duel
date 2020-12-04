@@ -13,6 +13,12 @@
     else
     {
         draw_sprite_ext(sprite_index, -1, x, y, faceDir, 1, 0, image_blend, 1);
+		
+		draw_set_color(c_white);
+		draw_text(x - 30, y - 80, "run left: " + string(currentRunLeftSpeed));
+		draw_text(x - 30, y - 70, "run right: " + string(currentRunRightSpeed));
+		draw_text(x - 30, y - 60, "hspeed: " + string(hspeed));
+		draw_text(x - 30, y - 50, "state: " + string(state));
     }
     
     /*draw_set_color(c_black);
