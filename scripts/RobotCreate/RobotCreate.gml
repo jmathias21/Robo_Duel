@@ -2,13 +2,16 @@ function RobotCreate(argument0, argument1) {
 	// Set player number
 	player = argument0;
 	otherPlayer = argument1;
+	
+	alarm[3] = 100;
+	pressJump = false;
     
 	ammo = 0;
 	deathType = 0;
     
 	// Set physics properties
 	rgravity = .14;
-	maxRunSpeed = 4.5;
+	maxRunSpeed = 1.1;
 	currentRunLeftSpeed = 0;
 	currentRunRightSpeed = 0;
 	vspeed = 0;

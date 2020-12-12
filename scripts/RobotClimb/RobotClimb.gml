@@ -1,4 +1,6 @@
 function RobotClimb() {
+	state = activeState.climbing;
+	
 	currentRunRightSpeed = 0;
 	currentRunLeftSpeed = 0;
 		
@@ -15,11 +17,11 @@ function RobotClimb() {
             y += 1.3;
         }
     }
-		
-	if (pressRun) {
-        state = activeState.standing;
-        faceDir = pressRunDir;
-        hspeed = maxRunSpeed * pressRunDir;
+	
+	if (runSensitivity > .9) {
+		faceDir = pressRunDir;
+		hspeed = maxRunSpeed * pressRunDir;
+        RobotStand();
 	} else {
 		hspeed = 0;
 	}

@@ -10,6 +10,7 @@ function RobotLandOnFloor() {
 	}
 	
 	if (pressRun) {
-		state = activeState.running;
+		RobotRun();
+		return;
 	}
 }

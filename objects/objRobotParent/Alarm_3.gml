@@ -1,0 +1,3 @@
+{
+	pressJump = true;
+}

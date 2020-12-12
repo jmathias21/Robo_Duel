@@ -1,39 +1,36 @@
 function RobotRun() {
+	state = activeState.running;
+	
 	// face robot in the direction user is pressing
 	faceDir = pressRunDir != 0 ? pressRunDir : faceDir;
 	
+	if (pressRunLeft && onFloor) {
+		hspeed -= .4 * runSensitivity;
+		if (hspeed < -1) {
+			hspeed = -1 + ((hspeed + 1) * .5);
+		}
+	}
+	
+	if (pressRunRight && onFloor) {
+		hspeed += .4 * runSensitivity;
+		if (hspeed > 1) {
+			hspeed = 1 + ((hspeed - 1) * .5);
+		}
+	}
+	
 	if ((pressRun && onFloor && pressRoll) || (landingOnFloor && (pressCrouch || pressRoll))) {
-        state = activeState.rolling;
+        RobotRoll();
 		return;
     }
 	
 	if (pressJump && onFloor) {
-		state = activeState.jumping;
-		return;
-	}
-	
-	if (pressRunLeft && onFloor) {
-		currentRunRightSpeed *= .8;
-		currentRunLeftSpeed += 1;
-		
-		if (currentRunLeftSpeed > maxRunSpeed) {
-			currentRunLeftSpeed = maxRunSpeed;
-		}
-		return;
-	}
-	
-	if (pressRunRight && onFloor) {
-		currentRunLeftSpeed *= .8;
-		currentRunRightSpeed += 1;
-		
-		if (currentRunRightSpeed > maxRunSpeed) {
-			currentRunRightSpeed = maxRunSpeed;
-		}
+		RobotJump();
 		return;
 	}
 	
 	// if no actions are chained, change robot back to standing state
 	if (!pressRun) {
-		state = activeState.standing;
+		RobotStand();
+		return;
 	}
 }

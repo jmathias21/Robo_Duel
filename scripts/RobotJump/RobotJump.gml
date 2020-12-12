@@ -1,4 +1,10 @@
 function RobotJump() {
-	vspeed = -3;
-	state = activeState.running;
+	state = activeState.jumping;
+	
+	if (onFloor) {
+		vspeed -= 2.8;
+		
+		state = activeState.standing;
+		return;
+	}
 }

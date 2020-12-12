@@ -1,4 +1,6 @@
 function RobotShoot() {
+	state = activeState.shooting;
+	
 	switch (item)
         {
             case 1:

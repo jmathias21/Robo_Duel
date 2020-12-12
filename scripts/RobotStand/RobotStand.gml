@@ -1,24 +1,24 @@
 function RobotStand() {
-	// Transition run speed to 0
-	currentRunLeftSpeed *= .2;
-	currentRunRightSpeed *= .2;
+	state = activeState.standing;
 	
 	if (pressRun) {
-        state = activeState.running;
+        RobotRun();
 		return;
 	}
 	
 	if (pressCrouch) {
-		state = activeState.crouching;
+		RobotCrouch();
+		return;
 	}
 	
 	if (pressShoot) {
-		state = activeState.shooting;
 		RobotShoot();
+		return;
 	}
 	
 	if (pressJump && onFloor) {
-		state = activeState.jumping;
+		RobotJump();
+		return;
 	}
 	
 	if (pressClimbUp && onFloor && !place_meeting(x, y - 1, objWall))
@@ -26,7 +26,8 @@ function RobotStand() {
         var instRope = instance_place(x, y + 5, objRope);
         if (instRope != noone)
         {
-            state = activeState.climbing;
+            RobotClimb();
+			return;
         }
     }
 }
