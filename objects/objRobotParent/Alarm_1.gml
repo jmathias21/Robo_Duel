@@ -1,11 +1,9 @@
 {
-    if (shooting)
-    {
-        switch (item)
-        {
+    if (state == activeState.shooting) {
+        switch (item) {
             case 1:
-                instWeaponLaser = instance_create(x + (15 * dir), y - 21, objWeaponLaser);
-                instWeaponLaser.ldirection = dir;
+                instWeaponLaser = instance_create(x + (15 * faceDir), y - 21, objWeaponLaser);
+                instWeaponLaser.ldirection = faceDir;
                 instWeaponLaser.alarm[0] = 27;
                 instWeaponLaser.player = id;
                 sprite_index = sprRobotShoot2;
@@ -15,14 +13,14 @@
             break;
             
             case 2:
-                instance_create(x + (8 * dir), y + 1, objWeaponMine);
+                instance_create(x + (8 * faceDir), y + 1, objWeaponMine);
                 audio_play_sound(soundMinePlant, 1, false);
             break;
             
             case 3:
-                instWeaponRocket = instance_create(x + (15 * dir), y - 21, objWeaponHomingRocket);
+                instWeaponRocket = instance_create(x + (15 * faceDir), y - 21, objWeaponHomingRocket);
                 instWeaponRocket.target = otherPlayer;
-                if (dir == 1)
+                if (faceDir == 1)
                     instWeaponRocket.direction = 0;
                 else
                     instWeaponRocket.direction = 180;
@@ -33,22 +31,22 @@
             break;
             
             case 5:
-                instZapTrapUp = instance_create(x + (15 * dir), y - 21, objZapTrap);
+                instZapTrapUp = instance_create(x + (15 * faceDir), y - 21, objZapTrap);
                 instZapTrapUp.dir = 0;
-                instZapTrapDown = instance_create(x + (15 * dir), y - 17, objZapTrap);
+                instZapTrapDown = instance_create(x + (15 * faceDir), y - 17, objZapTrap);
                 instZapTrapDown.dir = 1;
                 instZapTrapUp.partner = instZapTrapDown;
                 instZapTrapDown.partner = instZapTrapUp;
             break;
             
             case 7:
-                instRubber = instance_create(x + (15 * dir), y - 19, objRubber);
-                instRubber.dir = dir;
+                instRubber = instance_create(x + (15 * faceDir), y - 19, objRubber);
+                instRubber.dir = faceDir;
             break;
             
             case 8:
-                instMortar = instance_create(x + (12 * dir), y + 1, objMortar);
-                instMortar.dir = dir;
+                instMortar = instance_create(x + (12 * faceDir), y + 1, objMortar);
+                instMortar.dir = faceDir;
             break;
         }
     }

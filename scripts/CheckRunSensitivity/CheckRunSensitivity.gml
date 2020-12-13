@@ -1,4 +1,4 @@
-function GetRunSensitivity(argument0) {
+function CheckRunSensitivity(argument0) {
 	var playerControl = argument0;
 	
 	if (playerControl == 0) {

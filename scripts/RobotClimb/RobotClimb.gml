@@ -21,7 +21,8 @@ function RobotClimb() {
 	if (runSensitivity > .9) {
 		faceDir = pressRunDir;
 		hspeed = maxRunSpeed * pressRunDir;
-        RobotStand();
+        RobotJump();
+		return;
 	} else {
 		hspeed = 0;
 	}

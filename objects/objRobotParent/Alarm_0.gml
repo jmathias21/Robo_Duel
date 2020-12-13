@@ -1,4 +1,4 @@
 {
-    shooting = false;
+    state = activeState.standing;
 }
 

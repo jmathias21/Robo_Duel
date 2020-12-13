@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Robot.yy",
   },
   "resourceVersion": "1.0",
-  "name": "UpdateActiveState",
+  "name": "RobotUpdatePassiveStates",
   "tags": [],
   "resourceType": "GMScript",
 }

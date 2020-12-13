@@ -9,8 +9,17 @@ function RobotLandOnFloor() {
 		RobotDestroy(2);
 	}
 	
+	if ((pressRun && onFloor && pressRoll) || (landingOnFloor && (pressCrouch || pressRoll))) {
+		faceDir = pressRunDir != 0 ? pressRunDir : faceDir;
+        RobotRoll();
+		return;
+    }
+	
 	if (pressRun) {
 		RobotRun();
+		return;
+	} else {
+		RobotStand();
 		return;
 	}
 }

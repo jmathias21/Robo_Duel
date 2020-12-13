@@ -2,7 +2,9 @@ function RobotRun() {
 	state = activeState.running;
 	
 	// face robot in the direction user is pressing
-	faceDir = pressRunDir != 0 ? pressRunDir : faceDir;
+	if (!inAir) {
+		faceDir = pressRunDir != 0 ? pressRunDir : faceDir;
+	}
 	
 	if (pressRunLeft && onFloor) {
 		hspeed -= .4 * runSensitivity;
@@ -18,7 +20,7 @@ function RobotRun() {
 		}
 	}
 	
-	if ((pressRun && onFloor && pressRoll) || (landingOnFloor && (pressCrouch || pressRoll))) {
+	if ((pressRun && onFloor && pressedRoll) || (landingOnFloor && (pressCrouch || pressedRoll))) {
         RobotRoll();
 		return;
     }

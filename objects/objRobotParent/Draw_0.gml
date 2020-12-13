@@ -1,7 +1,6 @@
 {
     // Players other than player 1 are blended a different color
-    if (player != 0)
-    {
+    if (player != 0) {
         shader_set(shColorReplaceBlend);
         shader_set_uniform_color(hnd_colorIn, colorIn, 1.0);
         shader_set_uniform_color(hnd_colorOut, colorOut, 1.0);
@@ -9,12 +8,11 @@
         shader_set_uniform_f(hnd_blend, 1);
         draw_sprite_ext(sprite_index, -1, x, y, faceDir, 1, 0, image_blend, 1);
         shader_reset();
-    }
-    else
-    {
+    } else {
         draw_sprite_ext(sprite_index, -1, x, y, faceDir, 1, 0, image_blend, 1);
 		
 		draw_set_color(c_white);
+		draw_text(x - 30, y - 80, "imgspeed: " + string(image_speed));
 		draw_text(x - 30, y - 70, "sens: " + string(runSensitivity));
 		draw_text(x - 30, y - 60, "hspeed: " + string(hspeed));
 		draw_text(x - 30, y - 50, "state: " + string(state));

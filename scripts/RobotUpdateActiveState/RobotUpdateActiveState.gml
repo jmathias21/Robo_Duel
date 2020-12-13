@@ -1,4 +1,4 @@
-function UpdateActiveState() {
+function RobotUpdateActiveState() {
 	if (landingOnFloor) {
 		RobotLandOnFloor();
 		return;
@@ -26,6 +26,16 @@ function UpdateActiveState() {
 	
 	if (state == activeState.climbing) {
 		RobotClimb();
+		return;
+	}
+	
+	if (state == activeState.rolling) {
+		RobotRoll();
+		return;
+	}
+	
+	if (state == activeState.shooting) {
+		RobotShoot();
 		return;
 	}
 }

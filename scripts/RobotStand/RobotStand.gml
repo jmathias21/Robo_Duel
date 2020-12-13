@@ -26,6 +26,18 @@ function RobotStand() {
         var instRope = instance_place(x, y + 5, objRope);
         if (instRope != noone)
         {
+			x = instRope.x;
+            RobotClimb();
+			return;
+        }
+    }
+	
+	if (pressClimbDown && onFloor)
+    {
+        var instRope = instance_place(x, y + 24, objRope);
+        if (instRope != noone)
+        {
+			x = instRope.x;
             RobotClimb();
 			return;
         }

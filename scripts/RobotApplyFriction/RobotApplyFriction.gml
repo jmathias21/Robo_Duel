@@ -1,6 +1,5 @@
-function RobotApplyFriction(argument0) {
-	frict = argument0;
+function RobotApplyFriction() {
 	if (onFloor && state != activeState.jumping) {
-		hspeed *= frict;
+		hspeed *= .6;
 	}
 }
