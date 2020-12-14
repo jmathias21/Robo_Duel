@@ -4,6 +4,7 @@
     {"id":{"name":"sprExplosion2","path":"sprites/sprExplosion2/sprExplosion2.yy",},"order":1,},
     {"id":{"name":"RobotShoot","path":"scripts/RobotShoot/RobotShoot.yy",},"order":10,},
     {"id":{"name":"sprExplosion3","path":"sprites/sprExplosion3/sprExplosion3.yy",},"order":2,},
+    {"id":{"name":"robot_state_changes_library","path":"scripts/robot_state_changes_library/robot_state_changes_library.yy",},"order":23,},
     {"id":{"name":"RobotRoll","path":"scripts/RobotRoll/RobotRoll.yy",},"order":7,},
     {"id":{"name":"sprRobotStand","path":"sprites/sprRobotStand/sprRobotStand.yy",},"order":0,},
     {"id":{"name":"sprRobotGrapple","path":"sprites/sprRobotGrapple/sprRobotGrapple.yy",},"order":1,},

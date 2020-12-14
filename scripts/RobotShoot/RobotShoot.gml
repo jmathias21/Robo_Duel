@@ -1,10 +1,4 @@
 function RobotShoot() {
-	state = activeState.shooting;
-	
-	if (item == 0) {
-		state = activeState.standing;
-	}
-	
 	switch (item) {
         case 1:
             if (ammo > 0) {

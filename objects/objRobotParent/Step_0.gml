@@ -7,7 +7,7 @@
 	
 	RobotApplyAirPhysics();
 	
-	RobotUpdateActiveState();
+	robot_update_state();
 	
 	RobotUpdateSprite();
 }

@@ -51,5 +51,15 @@ function RobotCreate(argument0, argument1) {
 	   standing,
 	   crouching,
 	   shielding
-   }
+	}
+   
+	states[0] = activeState.climbing;
+	states[1] = activeState.running;
+	states[2] = activeState.rolling;
+	states[3] = activeState.jumping;
+	states[4] = activeState.doubleJumping;
+	states[5] = activeState.shooting;
+	states[6] = activeState.standing;
+	states[7] = activeState.crouching;
+	states[8] = activeState.shielding;
 }

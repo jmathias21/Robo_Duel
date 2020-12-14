@@ -11,15 +11,13 @@ function RobotLandOnFloor() {
 	
 	if ((pressRun && onFloor && pressRoll) || (landingOnFloor && (pressCrouch || pressRoll))) {
 		faceDir = pressRunDir != 0 ? pressRunDir : faceDir;
-        RobotRoll();
+        robot_change_state(activeState.rolling);
 		return;
     }
 	
 	if (pressRun) {
-		RobotRun();
-		return;
+		robot_change_state(activeState.running);
 	} else {
-		RobotStand();
-		return;
+		robot_change_state(activeState.standing);
 	}
 }

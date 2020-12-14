@@ -1,6 +1,4 @@
 function RobotClimb() {
-	state = activeState.climbing;
-	
 	currentRunRightSpeed = 0;
 	currentRunLeftSpeed = 0;
 		
